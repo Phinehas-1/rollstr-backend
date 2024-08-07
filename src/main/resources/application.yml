@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: springbootbackend4nextjs
+    datasource:
+        url: jdbc:postgresql://localhost:5432/hibtest
+        username: postgres
+        password: password
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+rsa:
+    private-key: classpath:certs/private-key.pem
+    public-key: classpath:certs/public-key.pem
+
+logging:
+    level:
+        org.springframework.security: DEBUG
+        com.bigdecimal.springbootbackend4nextjs: DEBUG

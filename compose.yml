@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: 'postgres:16.2-alpine'
+    environment:
+      - 'POSTGRES_DB=hibtest'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5432:5432'
+  redis:
+    image: 'redis:alpine'
+    ports:
+      - '6379:6379'
+
